@@ -1,0 +1,10 @@
+.Scrollable {
+  position: absolute;
+  top: 0px;
+//   left: (100% - 300px)/2;
+  background-color: white;
+  width: 300px;
+  max-width: 300px;
+  height: 100vh;
+  z-index: 2;
+}

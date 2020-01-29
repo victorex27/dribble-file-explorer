@@ -1,0 +1,9 @@
+.Componenent-Grid {
+  flex: 1 1 150px;
+  margin: 25px auto;
+  & > div {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,47 @@
+$dimension: 70px;
+$padding: 2px;
+$iconDimension: 40px;
+.GridImage {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: $dimension;
+  height: $dimension;
+  padding: $padding;
+
+  span {
+    display: inline-block;
+    &:first-child {
+      flex: 0 0 5px;
+    }
+    &:nth-child(2) {
+      flex: 0 1 100%;
+      border-radius: 4px;
+      & > div {
+          width: 40px;
+          height: 40px;
+          margin: 2px auto;
+          border-radius: 0.5em;
+      }
+
+      .black{background-color: #06070C;}
+      .not-black{background-color: #FFB028;}
+    }
+    &:last-child {
+      flex: 0 0 10px;
+      text-transform: capitalize;
+      font-size: 0.5em;
+    }
+  }
+
+  .dot {
+      float: right;
+      margin-right:10px;
+      display: block;
+      border-radius: 50%;
+      background-color: white;
+      width: 5px;
+      height:5px;
+    
+  }
+}

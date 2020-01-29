@@ -1,0 +1,72 @@
+$bigChildHeight: 70px;
+.Component-StatusDiv {
+  margin: 10px auto;
+  div.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 0 0 250px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    & > div {
+        padding: 15px 7px  ;
+      &:first-child {
+        display: flex;
+        justify-content: flex-start;
+        flex: 0 1 100%;
+        width: 200px; // i dont want the width here
+        height: $bigChildHeight;
+        background-color: white;
+        border-radius: 0.8em 0.8em 0 0.8em;
+        div {
+          &:first-child {
+            padding: 10px;
+            flex: 0 0 30%;
+          }
+
+          &:last-child {
+            flex: 1 1 70%;
+          }
+        }
+      }
+      &:last-child {
+        padding: 7px auto;
+        flex: 0 0 30px;
+        height: $bigChildHeight - 30px;
+        background-color: black;
+        color: white;
+        writing-mode: tb-rl;
+        text-align: center;
+        font-size: 0.6em;
+        border-radius: 0em 1em 1em 0em;
+        // transform: rotate(-180deg);
+        // text-transform: ;
+      }
+    }
+
+    div.status {
+        text-align: left;
+        line-height: 0.6em;
+
+      span {
+        display: block;
+        font-size: 0.6em;
+        &:first-child{
+            font-weight: bold;
+        }
+
+        &:nth-child(2){
+            font-weight: 600;
+        }
+
+        &:last-child{
+            font-weight: 300;
+            font-size: 0.45em;
+            margin-top: 10px;
+            color: rgba(0,0,0, 0.4);
+        }
+      }
+    }
+  }
+}
