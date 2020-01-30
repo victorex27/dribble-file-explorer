@@ -1,10 +1,16 @@
 .Scrollable {
   position: absolute;
-  top: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin:auto;
 //   left: (100% - 300px)/2;
   background-color: white;
   width: 300px;
   max-width: 300px;
   height: 100vh;
   z-index: 2;
+  display: none;
+  
 }

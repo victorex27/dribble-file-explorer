@@ -3,7 +3,7 @@ import "./Scrollable.scss";
 
 const Scrollable = (props) =>{
 
-    return <div className="Scrollable">nn</div>
+    return <div className="Scrollable"></div>
 };
 
 export default Scrollable;
